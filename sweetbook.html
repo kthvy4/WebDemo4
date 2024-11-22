@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweetbook</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5f5;
+            color: #000000;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #ffb6c1;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        nav {
+            background-color: #ffd1dc;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display:inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #ff69b4;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ff1493;
+        }
+        .mood-categories {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .mood-category {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            width: 180px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .mood-category:hover {
+            transform: translateY(-5px);
+        }
+        .mood-category h3 {
+            color: #ff69b4;
+            margin: 0;
+        }
+        .featured-books {
+            margin-top: 40px;
+        }
+        .book-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .book {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            width: 200px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .book:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            text-align: center;
+            color: #ff69b4;
+            font-family: 'Pacifico', cursive;
+            margin-bottom: 5px;
+        }
+        .heart-decoration {
+            position: absolute;
+            font-size: 2em;
+            color: #ffd1dc;
+            opacity: 0.5;
+        }
+        footer {
+            background-color: #ffb6c1;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .about-me {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .about-me h3 {
+            font-family: 'Pacifico', cursive;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sweetbook</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="sweetbook.html">Beranda</a></li>
+            <li><a href="daftarbuku.html">Daftar Buku</a></li>
+            <li><a href="#">Sedang Dibaca</a></li>
+            <li><a href="#">Target Bulanan</a></li>
+            <li><a href="#">Ulasan Populer</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Pilih Suasana Hati Anda</h2>
+        <div class="mood-categories">
+            <div class="mood-category">
+                <h3>Romantis</h3>
+            </div>
+            <div class="mood-category">
+                <h3>Lucu</h3>
+            </div>
+            <div class="mood-category">
+                <h3>Misterius</h3>
+            </div>
+            <div class="mood-category">
+                <h3>Inspiratif</h3>
+            </div>
+            <div class="mood-category">
+                <h3>Marah</h3>
+            </div>
+            <div class="mood-category">
+                <h3>Sedih</h3>
+            </div>
+        </div>
+        
+        <div class="featured-books">
+            <h2>Buku Populer</h2>
+            <div class="book-list">
+                <div class="book">
+                    <h3>Judul Buku 1</h3>
+                    <p>Ulasan singkat tentang buku ini...</p>
+                </div>
+                <div class="book">
+                    <h3>Judul Buku 2</h3>
+                    <p>Ulasan singkat tentang buku ini...</p>
+                </div>
+                <div class="book">
+                    <h3>Judul Buku 3</h3>
+                    <p>Ulasan singkat tentang buku ini...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="heart-decoration" style="top: 20%; left: 5%;">&#10084;</div>
+    <div class="heart-decoration" style="top: 40%; right: 8%;">&#10084;</div>
+    <div class="heart-decoration" style="bottom: 15%; left: 10%;">&#10084;</div>
+    <div class="heart-decoration" style="bottom: 55%; left: 30%;">&#10084;</div>
+    <div class="heart-decoration" style="bottom: 5%; left: 20%;">&#10084;</div>
+</body>
+    <footer>
+    <div class="about-me">
+        <h3>About Me</h3>
+        <p>Hello!!! aku adalah seorang pecinta buku. SweetBook merupakan proyek untuk membantu kalian menemukan buku sesuai dengan suasana hati kalian</p>
+        <p>Owner of Sweetbook</p>
+    </div>
+    </footer>
+</html>
